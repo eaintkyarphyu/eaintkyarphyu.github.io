@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <form action="save.php" method="Get">
+        <label for="name">Name</label>
+        <input type="name" name="stu-name" id="name" placeholder="Enter Your Name" required><br><br>
+        <label for="email">Email</label>
+        <input type=" email" name="stu-email" id="email" placeholder="Enter Your Email" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="stu-password" id="password" placeholder="Enter Your password" required ><br><br>
+        <label for="phone">Phone</label>
+        <input type="number" name="stu-phone" id="Phone" placeholder="Enter Your Number" required><br><br>
+        <label for="passport">Passport</label>
+        <input type="file" name="passport" id="passport" accept="img/*"><br><br>
+        <label for="year">Years</label>
+        <select name="stu-year" id="year">
+            <option value="">Choose Year</option>
+            <option value="Fitst">First year</option>
+            <option value=" second">Second year</option>
+            <option value=" third ">Third year</option>
+        </select><br><br>
+        <label for="">Genter</label>
+        <input type="radio" name="genter" id="male"><label for="male">Male</label>
+        <input type="radio" name="genter" id="female"><label for="female">Female</label>
+        <input type="radio" name="genter" id="other"><label for="other">Other</label><br><br>
+        <button type="submit">Save</button>
+    </form>
+    <a href="../HTML/index.html">Main pages</a>
+</body>
+</html>
