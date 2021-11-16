@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js1.html</title>
+</head>
+<body>
+    <script>
+        // Variable
+        var a =13; //Global variable
+        console.log(a);
+        let b = 23; // Block Scope Variable
+        console.log(b);
+        const c = 33; // COnstant Variable
+        console.log(c);
+
+        a = 103;
+        console.log(a);
+        b = 203;
+        console.log(b);
+        //c = 303;
+        //console.log(c);
+
+        //Variable scope
+        var x =12;
+        if(x==12){
+        var num1 = 12;
+        let num2 = 15; 
+        }
+        console.log(num1);
+        // console.log(num2);
+
+        let d;
+        console.log(d);
+
+        let e = null;
+        console.log (e);
+
+        //addition operator
+        let three = 1 + 2 ;
+        console.log(three);
+        let four = three + 1 ;
+        console.log(four);
+        let threeOne = 'three' + 1;
+        console.log(threeOne);
+
+        //substration operator
+        let two = 4-2 ;
+        console.log(two)
+
+        //remainder operator
+        let rem1  = 20 % 5 ;
+        console.log(rem1);
+        let rem2 = 20 % 7 ;
+        console.log(rem2);
+        let rem3 = 1 % 0 ;
+        console.log(rem3);
+
+        //Multiplication operator
+        let mul1 = 12 * 12 ;
+        console.log(mul1);
+        let mul2 = -1 * 2 ;
+        console.log(mul2);
+
+        //Exponentiation operator
+        let exp1 = 2**2 ;
+        console.log(exp1);
+        let exp2 = 8**8 ;
+
+        // precedence
+        // * / %
+        // + -
+        // =
+        let total = 2 * 1 + 5 / 2 % 2 ;
+        console.log(total);
+    </script>
+</body>
+</html>
