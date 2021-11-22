@@ -32,11 +32,14 @@
            //&& And
            //|| Or
            //! Not
-           if(c > 80 || java > 80 || js >80 ){
-              document.write("<h1>This student is honored!</h1>") 
+           if(c >= 80 || java >= 80 || js >= 80){
+               document.write("<h1>This student is honored!")
+           }else if (c >= 50 && java >= 50  && js >= 50){
+               document.write("<h1>This student is pass! ")
            }else{
-               document.write("<h1>This student is unhonored!</h1>")
+               document.write("<h1>This student is fail!")
            }
+    
         }
     </script>
 </body>
