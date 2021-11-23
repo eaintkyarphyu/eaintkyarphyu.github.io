@@ -32,41 +32,57 @@
            //&& And
            //|| Or
            //! Not
-           if( c >=50 && java >= 50 && js >= 50){
-
-           if(c > 80 || java > 80 || js > 80 ){          
-                    if(c > 80){
-                        document.write("<h1>This student is passed with honor in c </h1>")
-                    }else if ( java > 80){
-                        document.write("<h1>This student is passed with honor in java </h1>")
-                    }else if (js > 80){
-                        document.write("<h1>This student is passed with honor in js</h1>")
-                    }
+    
+        if( c >= 50 && java >= 50 && js >= 50){
+            if ( c > 80 && java > 80 && js > 80){
+                document.write("<h1>THis student is passed all subjects with honor</h1>")
+            
+            }
+            
+            else if( c > 80 && java > 80 || c > 80 && js > 80 || java > 80 && js > 80){
+                if( c > 80 && java > 80){
+                    document.write("<h1>This student is passed c and java with honor</h1>")
+                }else if( c > 80 && js > 80){
+                     document.write("<h1>This student is passed c and js with honor</h1>")
+                }else if( java > 80 && js > 80){
+                    document.write("<h1>This student is passed java and js with honor</h1>")
+                }
+            }else if( c > 80 || java > 80 || js > 80){
+                if( c > 80){
+                    document.write("<h1>This student is passed c with honor</h1>")
+                }else if( java > 80){
+                    document.write("<h1>This student is passed java with honor</h1>")
+                }else if(js > 80){
+                    document.write("<h1>THis student is passed js with honor</h1>")
                 }
             }
-             if(c < 50 || java < 50 || js < 50){
-                if(c < 50){
-                    document.write("<h1>This student is failed in c</h1>")
-                }else if ( java <50 ){
-                    document.write("<h1>This student is failed in java</h1>")
-                }else if ( js < 80){
-                    document.write("<h1>This syudent is failde in js</h1>")
-                }
-            }
-            if( c >=50 && java >= 50 && js >= 50){
-                  if (c>= 50 && java >= 50 && js >= 50){
-                    document.write("<h1>This student is passed all subjects</h1>")
-                  } else if ( c>= 50 && java >= 50 && js >= 50){
-                      document.write("<h1>This student is passed all subjects</h1>")
-                  }else{
-                      document.write("<h1>This students is passed all subjects</h1>")
-                  }
         } 
+    
+        else if ( c < 50 || java < 50 || js < 50){
+            if( c < 50 && java < 50 && js < 50){
+                document.write("<h1>This student is failed all subjects</h1>")
+            }else if(c < 50 && java < 50 || c < 50 && js < 50 || java < 50 && js < 50 ){
+                if( c < 50 && java < 50){
+                    document.write("<h1>This student is failed c and java</h1>")
+                }else if(c < 50 && js < 50 ){
+                    document.write("<h1>This student is failed c and js</h1>")
+                }else if( java < 50 && js < 50 ){
+                    document.write("<h1>This student is failed java and js</h1>")
+                }
+            }else if(c < 50 || java < 50 || js < 50){
+                if(c < 50){
+                    document.write("<h1>This student is fail in c</h1>")
+                }else if(java < 50 ){
+                    document.write("<h1>This student is fail in java</h1>")
+                }else if("<h1>This student is fail in js</h1>"){
+                    document.write("<h1>This student is fail in js</h1>")
+                }
+            } 
+            
+         }
         
-    }
-                
-        
-        
+        }
+              
     </script>
 </body>
 </html>
